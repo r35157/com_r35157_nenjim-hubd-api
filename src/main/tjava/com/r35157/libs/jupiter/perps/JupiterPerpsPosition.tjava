@@ -13,6 +13,7 @@ import java.math.BigDecimal;
  * @param entryPrice the entry price of the position, denominated in USDC
  * @param direction whether the position is long or short
  * @param tradedTokenMint the mint address of the token being traded
+ * @param sizeUsd the size of this position in USD
  * @param collateralUsd the amount of USD representing the collateral for this position
  */
 public record JupiterPerpsPosition(
@@ -20,6 +21,7 @@ public record JupiterPerpsPosition(
         ΩUSDCPriceΩ entryPrice,
         JupiterPerpsPositionDirection direction,
         ΩSPLMintAddressΩ tradedTokenMint,
+        ΩUSDCAmountΩ sizeUsd,
         ΩUSDCAmountΩ collateralUsd
 ) {
 }
