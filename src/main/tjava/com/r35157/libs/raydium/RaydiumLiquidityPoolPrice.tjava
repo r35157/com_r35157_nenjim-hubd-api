@@ -1,0 +1,18 @@
+package com.r35157.libs.raydium;
+
+import com.r35157.libs.valuetypes.basic.MoneyAmount;
+
+/**
+ * Represents the price of a Raydium liquidity pool.
+ *
+ * <p>The pool id identifies the Raydium liquidity pool for which the price applies.
+ * The amount contains the price value returned or calculated for that pool.</p>
+ *
+ * @param poolId the Raydium liquidity pool id that the price belongs to
+ * @param amount the price amount for the liquidity pool
+ */
+public record RaydiumLiquidityPoolPrice(
+        ΩRaydiumLiquidityPoolIdΩ poolId,
+        MoneyAmount amount
+) {
+}
