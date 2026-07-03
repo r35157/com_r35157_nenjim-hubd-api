@@ -15,6 +15,7 @@ import java.math.BigDecimal;
  * @param tradedTokenMint the mint address of the token being traded
  * @param sizeUsd the size of this position in USD
  * @param collateralUsd the amount of USD representing the collateral for this position
+ * @oaram borrowFeeUsd TODO
  */
 public record JupiterPerpsPosition(
         ΩJupiterPerpsPositionAccountΩ positionAccount,
@@ -22,6 +23,7 @@ public record JupiterPerpsPosition(
         JupiterPerpsPositionDirection direction,
         ΩSPLMintAddressΩ tradedTokenMint,
         ΩUSDCAmountΩ sizeUsd,
-        ΩUSDCAmountΩ collateralUsd
+        ΩUSDCAmountΩ collateralUsd,
+        ΩUSDCAmountΩ borrowFeeUsd
 ) {
 }
